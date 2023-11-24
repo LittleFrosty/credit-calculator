@@ -1,8 +1,8 @@
 
 import { useEffect, useState } from 'react';
-import AddNew from './components/AddNew';
+import AddNew from '../components/AddNew';
 import axios from 'axios';
-import ViewLoan from './components/ViewLoan';
+import ViewLoan from '../components/ViewLoan';
 import { Button } from '@mui/material';
 const Home = () =>{
 

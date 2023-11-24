@@ -1,4 +1,4 @@
-let env = 'local';  // local, production
+let env = 'production';  // local, production
 
 if (env === 'local') {
   let domain = 'https://creditcalculator.test';
@@ -17,7 +17,7 @@ if (env === 'local') {
     },
   }
 }else {
-  let domain = 'https://demo.ellasoft.com';
+  let domain = 'https://calculator.ellasoft.com';
   module.exports = {
     assetPrefix: '/resources/views/front',
     output: 'export',

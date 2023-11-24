@@ -80,7 +80,7 @@ class LoansController extends Controller{
       'related_loans'   => Loans::where('name', $single_loan->name)->get(),
       'payment_history' => PaymentHistory::where('loan_id',$request->id)->orderBy('id','DESC')->get()->map(function($history){
         return [
-          'id'          => $history->loan_id,
+          'id'          => $history->id,
           'payment'     => $history->payment,
           'remaining'   => $history->remaining,
           'refund'      => $history->refund,
