@@ -124,7 +124,7 @@ const AddPayment = ({ setRefresh,setLoan,api, loanData }) => {
                       <th scope="row">{history.id}</th>
                       <td>
                         {history.payment} лв.
-                        {history.refund 
+                        {(history.refund > 0)
                           ?
                           <>
                             <hr />
